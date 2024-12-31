@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.productsWidget {
+	.content {
+		display: flex;
+		flex-direction: column;
+
+		.iphone {
+			background-color: #b2b2b2;
+			width: 100vw;
+			height: 632px;
+
+			.iphoneIn {
+				display: flex;
+
+				.description {
+					width: 714px;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					gap: 24px;
+					margin: auto 0;
+
+					p {
+						color: #d1d1d1;
+						font-family: 'Inter', sans-serif;
+						font-weight: 600;
+						font-size: 25px;
+						line-height: 32px;
+					}
+
+					.iphoneText {
+						display: flex;
+						gap: 30px;
+						color: white;
+						font-family: 'Inter', sans-serif;
+						font-size: 96px;
+						font-weight: 100;
+						line-height: 72px;
+
+						.pro {
+							font-size: 90px;
+							font-weight: 600;
+						}
+					}
+
+					.iphoneTxt {
+						color: #909090;
+						font-weight: 500;
+						font-size: 18px;
+						line-height: 24px;
+					}
+				}
+
+				.iphoneImg {
+					background-image: url(./img/iphone.png);
+					background-size: 100% 100%;
+					width: 406px;
+					height: 632px;
+				}
+			}
+		}
+		.anotherProducts {
+			display: flex;
+
+			.products {
+				display: flex;
+				width: 50%;
+				flex-wrap: wrap;
+
+				.playStation {
+					display: flex;
+					width: 100%;
+					height: 328px;
+
+					.playStationImg {
+						background-image: url(./img/palyStation.png);
+						width: 55%;
+						height: 343px;
+						background-size: 100% 100%;
+						background-repeat: no-repeat;
+					}
+					.playStationIn {
+						margin: auto 0;
+						display: flex;
+						flex-direction: column;
+						gap: 16px;
+						width: 338px;
+						margin-right: 48px;
+
+						.playStationText {
+							font-family: 'Inter', sans-serif;
+							font-weight: 500;
+							font-size: 49px;
+							line-height: 40px;
+						}
+
+						.playStationTxt {
+							font-family: 'Inter', sans-serif;
+							font-weight: 500;
+							font-size: 14px;
+							line-height: 24px;
+							color: #909090;
+						}
+					}
+				}
+				.appleProduct {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					flex-wrap: wrap;
+					width: 50%;
+					height: 272px;
+					background-color: #ededed;
+
+					.appleProductImg {
+						background-image: url(./img/airPods.png);
+						width: 104px;
+						height: 272px;
+						background-size: 100% 100%;
+						background-repeat: no-repeat;
+						margin-right: 48px;
+					}
+
+					.appleProductIn {
+						width: 160px;
+						margin: auto 0;
+
+						.appleProductText {
+							font-family: 'Inter', sans-serif;
+							font-weight: 300;
+							font-size: 29px;
+							line-height: 40px;
+
+							.bold {
+								font-family: 'Inter', sans-serif;
+								font-weight: 500;
+								font-size: 29px;
+								line-height: 40px;
+							}
+						}
+						.appleProductTxt {
+							width: 160px;
+							font-family: 'Inter', sans-serif;
+							font-weight: 500;
+							font-size: 14px;
+							line-height: 24px;
+							color: #909090;
+						}
+					}
+				}
+				.appleProduct2 {
+					background-color: #353535;
+
+					.appleProductImg {
+						background-image: url(./img/appleVision.png);
+						width: 134px;
+						height: 190px;
+						background-size: 100% 100%;
+						background-repeat: no-repeat;
+						margin-right: 16px;
+					}
+
+					.appleProductIn {
+						margin-right: 48px;
+
+						.appleProductText {
+							color: #fff;
+						}
+
+						.bold {
+							display: inline-block;
+						}
+					}
+				}
+			}
+
+			.macBook {
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				background-color: #ededed;
+				width: 50%;
+
+				.macBookIn {
+					display: flex;
+					flex-direction: column;
+					width: 360px;
+					margin: auto 0;
+					margin-left: 56px;
+					margin-right: 12px;
+					gap: 16px;
+
+					.macBookText {
+						font-family: 'Inter', sans-serif;
+						font-weight: 100;
+						font-size: 64px;
+						line-height: 56px;
+
+						.bold {
+							font-family: 'Inter', sans-serif;
+							font-weight: 500;
+							font-size: 64px;
+							line-height: 56px;
+						}
+					}
+
+					.macBookTxt {
+						font-family: 'Inter', sans-serif;
+						font-weight: 500;
+						font-size: 14px;
+						line-height: 24px;
+						color: #909090;
+					}
+
+					Button {
+						width: 191px;
+						height: 56px;
+						background-color: inherit;
+						border: 1px solid #111;
+						border-radius: 6px;
+
+						font-family: 'Inter', sans-serif;
+						font-weight: 500;
+						font-size: 16px;
+						line-height: 24px;
+						text-align: center;
+						text-transform: capitalize;
+						color: #111;
+					}
+				}
+
+				.macBookImg {
+					background-image: url(./img/macBook.png);
+					width: 292px;
+					height: 502px;
+					background-size: 100% 100%;
+					background-repeat: no-repeat;
+				}
+			}
+		}
+	}
+}

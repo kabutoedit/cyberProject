@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.nav {
+	display: flex;
+	gap: 33px;
+	font-family: 'Inter', sans-serif;
+
+	.link {
+		display: flex;
+		align-items: center;
+		text-transform: capitalize;
+		color: #b2b2b2;
+
+		svg {
+			margin-left: 4px;
+		}
+	}
+
+	.active {
+		color: black;
+	}
+}

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+header {
+	margin-top: 16px;
+	margin-bottom: 16px;
+
+	.head {
+		display: flex;
+		justify-content: space-between;
+		// gap: 56px;
+		align-items: center;
+
+		.searchLabel {
+			position: relative;
+
+			//убираем дефолтные иконки поиска
+
+			input[type='search'] {
+				&::-webkit-search-decoration,
+				&::-webkit-search-cancel-button,
+				&::-webkit-search-results-button,
+				&::-webkit-search-results-decoration {
+					display: none;
+				}
+			}
+
+			.search {
+				padding-left: 48px;
+				width: 372px;
+				height: 56px;
+				border-radius: 8px;
+				background-color: #f5f5f5;
+
+				&::placeholder {
+					color: #656565;
+					font-family: 'Inter', sans-serif;
+				}
+			}
+			.searchLogo {
+				position: absolute;
+				top: 25%;
+				left: 16px;
+				cursor: text;
+			}
+		}
+	}
+
+	.logo {
+		display: inline-block;
+		width: 65px;
+		height: 22px;
+	}
+
+	.btns {
+		display: flex;
+		gap: 21px;
+	}
+}

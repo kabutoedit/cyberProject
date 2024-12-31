@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './style.module.scss';
 import '../../app/index.css';
-import Button from '../button/Button';
+import ButtonWidget from '../buttonWidget/ButtonWidget';
 export default function ProductsWidget() {
     return (React.createElement("section", { className: styles.productsWidget },
         React.createElement("div", { className: styles.content },
@@ -14,7 +14,7 @@ export default function ProductsWidget() {
                                 "IPhone 14 ",
                                 React.createElement("h2", { className: styles.pro }, " Pro")),
                             React.createElement("p", { className: styles.iphoneTxt }, "Created to change everything for the better. For everyone"),
-                            React.createElement(Button, null)),
+                            React.createElement(ButtonWidget, null)),
                         React.createElement("div", { className: styles.iphoneImg })))),
             React.createElement("div", { className: styles.anotherProducts },
                 React.createElement("div", { className: styles.products },
@@ -45,6 +45,6 @@ export default function ProductsWidget() {
                             "Macbook ",
                             React.createElement("h4", { className: styles.bold }, "Air")),
                         React.createElement("p", { className: styles.macBookTxt }, "The new 15\u2011inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display."),
-                        React.createElement(Button, null)),
+                        React.createElement(ButtonWidget, null)),
                     React.createElement("div", { className: styles.macBookImg }))))));
 }

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.categoryBlock {
+	height: 352px;
+	display: flex;
+	align-items: center;
+	background-color: #fafafa;
+
+	.categoryIn {
+		margin: auto 0;
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+
+		.categoryText {
+			display: flex;
+			justify-content: space-between;
+
+			.title {
+				font-family: 'Inter', sans-serif;
+				font-size: 24px;
+				font-weight: 500;
+				line-height: 32px;
+			}
+
+			.btns {
+				display: flex;
+				gap: 16px;
+			}
+		}
+		.categories {
+			display: flex;
+			gap: 32px;
+
+			.category {
+				width: 160px;
+				height: 128px;
+				border-radius: 15px;
+				background-color: #ededed;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap: 8px;
+				cursor: pointer;
+			}
+		}
+	}
+}

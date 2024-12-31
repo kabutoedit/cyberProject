@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './style.module.scss'
 import '../../app/index.css'
-import Button from '../button/Button'
+import ButtonWidget from '../buttonWidget/ButtonWidget'
 
 export default function ProductsWidget() {
 	return (
@@ -18,7 +18,7 @@ export default function ProductsWidget() {
 								<p className={styles.iphoneTxt}>
 									Created to change everything for the better. For everyone
 								</p>
-								<Button />
+								<ButtonWidget />
 							</div>
 							<div className={styles.iphoneImg}></div>
 						</div>
@@ -68,7 +68,7 @@ export default function ProductsWidget() {
 								The new 15‑inch MacBook Air makes room for more of what you love
 								with a spacious Liquid Retina display.
 							</p>
-							<Button />
+							<ButtonWidget />
 						</div>
 						<div className={styles.macBookImg}></div>
 					</div>

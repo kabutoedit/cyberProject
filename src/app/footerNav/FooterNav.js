@@ -1,0 +1,36 @@
+import { NavLink } from 'react-router-dom';
+import React from 'react';
+import styles from './style.module.scss';
+export default function FooterNav() {
+    return (React.createElement("nav", { className: styles.footerNav },
+        React.createElement("div", { className: styles.links },
+            React.createElement("p", { className: styles.footerTxt }, "Services"),
+            React.createElement("ul", { className: styles.navList },
+                React.createElement("li", null,
+                    React.createElement(NavLink, { className: styles.link, to: '/bonusProgram' }, "Bonus Program")),
+                React.createElement("li", null,
+                    React.createElement(NavLink, { className: styles.link, to: '/giftCards' }, "Gift Cards")),
+                React.createElement("li", null,
+                    React.createElement(NavLink, { className: styles.link, to: '/creditAndPayment' }, "Credit and payment")),
+                React.createElement("li", null,
+                    React.createElement(NavLink, { className: styles.link, to: '/serviceContracts' }, "Service contracts")),
+                React.createElement("li", null,
+                    React.createElement(NavLink, { className: styles.link, to: '/nonCashAccount' }, "Non-cash account")),
+                React.createElement("li", null,
+                    React.createElement(NavLink, { className: styles.link, to: '/payment' }, "Payment")))),
+        React.createElement("div", { className: styles.links },
+            React.createElement("p", { className: styles.footerTxt }, "Assistance to the buyer"),
+            React.createElement("ul", { className: styles.navList },
+                React.createElement("li", null,
+                    React.createElement(NavLink, { className: ({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link, to: '/findAnOrder' }, "Find an order")),
+                React.createElement("li", null,
+                    React.createElement(NavLink, { className: ({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link, to: '/termsOfDelivery' }, "Terms of delivery")),
+                React.createElement("li", null,
+                    React.createElement(NavLink, { className: ({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link, to: '/exchangeAndReturnOfGoods' }, "Exchange and return of goods")),
+                React.createElement("li", null,
+                    React.createElement(NavLink, { className: ({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link, to: '/guarantee' }, "Guarantee")),
+                React.createElement("li", null,
+                    React.createElement(NavLink, { className: ({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link, to: '/frequentlyAskedQuestions' }, "Frequently asked questions")),
+                React.createElement("li", null,
+                    React.createElement(NavLink, { className: ({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link, to: '/termsOfUseOfTheSite' }, "Terms of use of the site"))))));
+}

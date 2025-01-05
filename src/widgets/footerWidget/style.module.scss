@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+footer {
+	height: 504px;
+	background-color: #000;
+	padding: 104px 160px;
+
+	.info {
+		display: flex;
+		margin-bottom: 24px;
+
+		.logo {
+			width: 384px;
+			display: flex;
+			flex-direction: column;
+			margin-right: 113px;
+
+			.img {
+				height: 22px;
+				margin-bottom: 24px;
+			}
+
+			.logoTxt {
+				color: #fff;
+				font-family: 'Inter', sans-serif;
+				font-size: 14px;
+				font-weight: 500;
+				line-height: 170.5%;
+			}
+		}
+	}
+
+	.social {
+		display: flex;
+		gap: 36px;
+	}
+}

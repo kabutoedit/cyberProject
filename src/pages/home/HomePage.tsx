@@ -3,6 +3,7 @@ import ProductsWidget from '../../widgets/productsWidget/ProductsWidget'
 import CategoryWidget from '../../widgets/categoryWidget/CategoryWidget'
 import PopularProductsWidget from '../../widgets/popularProductsWidget/PopularProductsWidget'
 import BannersWidget from '../../widgets/bannersWidget/BannersWidget'
+import DiscountProductsWidget from '../../widgets/discountProductsWidget/DiscountProductsWidget'
 
 export default function HomePage() {
 	return (
@@ -11,6 +12,7 @@ export default function HomePage() {
 			<CategoryWidget />
 			<PopularProductsWidget />
 			<BannersWidget />
+			<DiscountProductsWidget />
 		</>
 	)
 }

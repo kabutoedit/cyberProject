@@ -4,6 +4,7 @@ import CategoryWidget from '../../widgets/categoryWidget/CategoryWidget'
 import PopularProductsWidget from '../../widgets/popularProductsWidget/PopularProductsWidget'
 import BannersWidget from '../../widgets/bannersWidget/BannersWidget'
 import DiscountProductsWidget from '../../widgets/discountProductsWidget/DiscountProductsWidget'
+import BigBannerWidget from '../../widgets/bigBannerWidget/bigBannerWidget'
 
 export default function HomePage() {
 	return (
@@ -13,6 +14,7 @@ export default function HomePage() {
 			<PopularProductsWidget />
 			<BannersWidget />
 			<DiscountProductsWidget />
+			<BigBannerWidget />
 		</>
 	)
 }

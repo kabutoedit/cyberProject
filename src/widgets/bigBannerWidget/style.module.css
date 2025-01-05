@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+.bigBannerWidget {
+  height: 448px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./img/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bigBannerWidget .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.bigBannerWidget .content .bigBannerText {
+  display: flex;
+  gap: 20px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 72px;
+  font-weight: 100;
+  line-height: 72px;
+}
+.bigBannerWidget .content .bigBannerText .big {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 72px;
+}
+.bigBannerWidget .content .bigBannerTxt {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #787878;
+  margin-bottom: 40px;
+}/*# sourceMappingURL=style.module.css.map */

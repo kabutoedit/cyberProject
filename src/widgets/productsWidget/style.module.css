@@ -46,7 +46,7 @@
   line-height: 24px;
 }
 .productsWidget .content .iphone .iphoneIn .iphoneImg {
-  background-image: url(../../img/iphone.png);
+  background-image: url(./img/iphone.png);
   background-size: 100% 100%;
   width: 406px;
   height: 632px;
@@ -65,7 +65,7 @@
   height: 328px;
 }
 .productsWidget .content .anotherProducts .products .playStation .playStationImg {
-  background-image: url(../../img/palyStation.png);
+  background-image: url(./img/palyStation.png);
   width: 55%;
   height: 343px;
   background-size: 100% 100%;
@@ -102,7 +102,7 @@
   background-color: #ededed;
 }
 .productsWidget .content .anotherProducts .products .appleProduct .appleProductImg {
-  background-image: url(../../img/airPods.png);
+  background-image: url(./img/airPods.png);
   width: 104px;
   height: 272px;
   background-size: 100% 100%;
@@ -137,7 +137,7 @@
   background-color: #353535;
 }
 .productsWidget .content .anotherProducts .products .appleProduct2 .appleProductImg {
-  background-image: url(../../img/appleVision.png);
+  background-image: url(./img/appleVision.png);
   width: 134px;
   height: 190px;
   background-size: 100% 100%;
@@ -203,7 +203,7 @@
   color: #111;
 }
 .productsWidget .content .anotherProducts .macBook .macBookImg {
-  background-image: url(../../img/macBook.png);
+  background-image: url(./img/macBook.png);
   width: 292px;
   height: 502px;
   background-size: 100% 100%;

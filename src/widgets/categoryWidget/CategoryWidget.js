@@ -82,7 +82,7 @@ export default function Category() {
             name: 'Gaming',
         },
     ];
-    return (React.createElement("div", { className: styles.categoryBlock },
+    return (React.createElement("section", { className: styles.categoryBlock },
         React.createElement("div", { className: 'container' },
             React.createElement("div", { className: styles.categoryIn },
                 React.createElement("div", { className: styles.categoryText },

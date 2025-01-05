@@ -306,7 +306,7 @@ export default function Category() {
 		},
 	]
 	return (
-		<div className={styles.categoryBlock}>
+		<section className={styles.categoryBlock}>
 			<div className='container'>
 				<div className={styles.categoryIn}>
 					<div className={styles.categoryText}>
@@ -352,6 +352,6 @@ export default function Category() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	)
 }

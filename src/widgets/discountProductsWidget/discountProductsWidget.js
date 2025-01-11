@@ -2,34 +2,8 @@ import React, { useState } from 'react';
 import styles from './style.module.scss';
 import '../../app/index.css';
 import ButtonWidget from '../buttonWidget/ButtonWidget';
-export default function DiscountProductsWidget() {
+export default function DiscountProductsWidget({ products }) {
     const [fillColors, setFillColors] = useState({});
-    const products = [
-        {
-            id: 1,
-            img: 'src/widgets/discountProductsWidget/img/iphone14pro.png',
-            title: 'Apple iPhone 14 Pro 512GB Gold (MQ233)',
-            price: '$1437',
-        },
-        {
-            id: 2,
-            img: 'src/widgets/discountProductsWidget/img/airPodsMax.png',
-            title: 'AirPods Max Silver Starlight Aluminium',
-            price: '$549',
-        },
-        {
-            id: 3,
-            img: 'src/widgets/discountProductsWidget/img/appleWatch.png',
-            title: 'Apple Watch Series 9 GPS 41mm Starlight Aluminium ',
-            price: '$399',
-        },
-        {
-            id: 4,
-            img: 'src/widgets/discountProductsWidget/img/iphone14proSilver.png',
-            title: 'Apple iPhone 14 Pro 1TB Gold (MQ2V3)',
-            price: '$1499',
-        },
-    ];
     const changeColor = id => {
         setFillColors(prevState => ({
             ...prevState,
@@ -42,7 +16,7 @@ export default function DiscountProductsWidget() {
     return (React.createElement("section", { className: styles.discountProducts },
         React.createElement("div", { className: 'container' },
             React.createElement("h2", { className: styles.discountProductsTitle }, "Discounts up to -50%"),
-            React.createElement("div", { className: styles.products }, products.map(product => (React.createElement("div", { className: styles.product, key: product.id },
+            React.createElement("div", { className: styles.products }, products.slice(0, 4).map(product => (React.createElement("div", { className: styles.product, key: product.id },
                 React.createElement("h6", { className: styles.heart },
                     React.createElement("svg", { width: '32', height: '32', viewBox: '0 0 32 32', xmlns: 'http://www.w3.org/2000/svg', onClick: () => changeColor(product.id), style: {
                             fill: fillColors[product.id]?.fill || '#f6f6f6',

@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import styles from './style.module.scss';
 import '../../app/index.css';
 import ButtonWidget from '../buttonWidget/ButtonWidget';
-export default function DiscountProductsWidget({ products }) {
+const DiscountProductsWidget = ({ products, }) => {
     const [fillColors, setFillColors] = useState({});
-    const changeColor = id => {
+    const changeColor = (id) => {
         setFillColors(prevState => ({
             ...prevState,
             [id]: {
@@ -29,4 +29,5 @@ export default function DiscountProductsWidget({ products }) {
                     React.createElement("p", { className: styles.title }, product.title),
                     React.createElement("h2", { className: styles.price }, product.price)),
                 React.createElement(ButtonWidget, null))))))));
-}
+};
+export default DiscountProductsWidget;

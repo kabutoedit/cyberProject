@@ -3,7 +3,13 @@ import styles from './style.module.scss'
 import '../../app/index.css'
 
 export default function Category() {
-	const categories = [
+	interface Category {
+		id: number
+		img: React.ReactNode
+		name: string
+	}
+
+	const categories: Category[] = [
 		{
 			id: 1,
 			img: (
@@ -305,6 +311,7 @@ export default function Category() {
 			name: 'Gaming',
 		},
 	]
+
 	return (
 		<section className={styles.categoryBlock}>
 			<div className='container'>

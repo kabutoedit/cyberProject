@@ -8,7 +8,15 @@ import FooterWidget from '../../widgets/footerWidget/FooterWidget'
 import PopularProductsWidget from '../../widgets/popularProductsWidget/PopularProductsWidget'
 
 export default function HomePage() {
-	const productsData = [
+	interface Product {
+		id: number
+		img: string
+		title: string
+		price: string
+		category: string
+	}
+
+	const productsData: Product[] = [
 		{
 			id: 1,
 			img: 'src/pages/home/img/iphone14pro.png',

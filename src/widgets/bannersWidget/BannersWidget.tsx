@@ -3,7 +3,14 @@ import styles from './style.module.scss'
 import ButtonWidget from '../buttonWidget/ButtonWidget'
 
 export default function BannersWidget() {
-	const banners = [
+	interface Banner {
+		id: number
+		img: string
+		title: string
+		text: string
+	}
+
+	const banners: Banner[] = [
 		{
 			id: 1,
 			img: 'src/widgets/bannersWidget/img/firstBanner.png',

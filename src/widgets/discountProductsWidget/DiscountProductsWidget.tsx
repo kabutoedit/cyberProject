@@ -3,10 +3,26 @@ import styles from './style.module.scss'
 import '../../app/index.css'
 import ButtonWidget from '../buttonWidget/ButtonWidget'
 
-export default function DiscountProductsWidget({ products }) {
-	const [fillColors, setFillColors] = useState({})
+interface Product {
+	id: number
+	img: string
+	title: string
+	price: string
+	category: string
+}
 
-	const changeColor = id => {
+interface DiscountProductsWidgetProps {
+	products: Product[]
+}
+
+const DiscountProductsWidget: React.FC<DiscountProductsWidgetProps> = ({
+	products,
+}) => {
+	const [fillColors, setFillColors] = useState<
+		Record<number, { fill: string; stroke: string }>
+	>({})
+
+	const changeColor = (id: number) => {
 		setFillColors(prevState => ({
 			...prevState,
 			[id]: {
@@ -57,3 +73,5 @@ export default function DiscountProductsWidget({ products }) {
 		</section>
 	)
 }
+
+export default DiscountProductsWidget

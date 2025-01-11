@@ -4,7 +4,6 @@ import CategoryWidget from '../../widgets/categoryWidget/CategoryWidget'
 import BannersWidget from '../../widgets/bannersWidget/BannersWidget'
 import DiscountProductsWidget from '../../widgets/discountProductsWidget/DiscountProductsWidget'
 import BigBannerWidget from '../../widgets/bigBannerWidget/bigBannerWidget'
-import FooterWidget from '../../widgets/footerWidget/FooterWidget'
 import PopularProductsWidget from '../../widgets/popularProductsWidget/PopularProductsWidget'
 
 export default function HomePage() {
@@ -195,7 +194,6 @@ export default function HomePage() {
 			<BannersWidget />
 			<DiscountProductsWidget products={productsData} />
 			<BigBannerWidget />
-			<FooterWidget />
 		</>
 	)
 }

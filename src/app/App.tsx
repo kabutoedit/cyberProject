@@ -7,6 +7,8 @@ import HeaderWidget from '../widgets/headerWidget/HeaderWidget'
 import About from '../pages/about/About'
 import ContactUs from '../pages/contactUs/ContactUs'
 import Blog from '../pages/blog/Blog'
+import ProductsPage from '../pages/catalogPage/CatalogPage'
+import FooterWidget from '../widgets/footerWidget/FooterWidget'
 
 function App() {
 	return (
@@ -18,7 +20,9 @@ function App() {
 				<Route path='/contactUs' element={<ContactUs />} />
 				<Route path='/blog' element={<Blog />} />
 				<Route path='/cart' element={<Cart />} />
+				<Route path='/products' element={<ProductsPage />} />
 			</Routes>
+			<FooterWidget />
 		</>
 	)
 }

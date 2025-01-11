@@ -4,7 +4,6 @@ import CategoryWidget from '../../widgets/categoryWidget/CategoryWidget';
 import BannersWidget from '../../widgets/bannersWidget/BannersWidget';
 import DiscountProductsWidget from '../../widgets/discountProductsWidget/DiscountProductsWidget';
 import BigBannerWidget from '../../widgets/bigBannerWidget/bigBannerWidget';
-import FooterWidget from '../../widgets/footerWidget/FooterWidget';
 import PopularProductsWidget from '../../widgets/popularProductsWidget/PopularProductsWidget';
 export default function HomePage() {
     const productsData = [
@@ -183,6 +182,5 @@ export default function HomePage() {
         React.createElement(PopularProductsWidget, { products: productsData }),
         React.createElement(BannersWidget, null),
         React.createElement(DiscountProductsWidget, { products: productsData }),
-        React.createElement(BigBannerWidget, null),
-        React.createElement(FooterWidget, null)));
+        React.createElement(BigBannerWidget, null)));
 }

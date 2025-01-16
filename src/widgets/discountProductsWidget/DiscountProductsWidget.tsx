@@ -12,11 +12,11 @@ interface Product {
 }
 
 interface DiscountProductsWidgetProps {
-	products: Product[]
+	productsData: Product[]
 }
 
 const DiscountProductsWidget: React.FC<DiscountProductsWidgetProps> = ({
-	products,
+	productsData,
 }) => {
 	const [fillColors, setFillColors] = useState<
 		Record<number, { fill: string; stroke: string }>
@@ -37,13 +37,9 @@ const DiscountProductsWidget: React.FC<DiscountProductsWidgetProps> = ({
 			<div className='container'>
 				<h2 className={styles.discountProductsTitle}>Discounts up to -50%</h2>
 				<div className={styles.products}>
-					{products.slice(0, 4).map(product => (
+					{productsData.slice(20, 24).map(product => (
 						<ProductCardWidget
-							key={product.id}
-							id={product.id}
-							img={product.img}
-							title={product.title}
-							price={product.price}
+							{...product}
 							fillColors={
 								fillColors[product.id] || {
 									fill: '#f6f6f6',

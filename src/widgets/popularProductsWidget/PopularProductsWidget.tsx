@@ -12,11 +12,11 @@ interface Product {
 }
 
 interface PopularProductsWidgetProps {
-	products: Product[]
+	productsData: Product[]
 }
 
 const PopularProductsWidget: React.FC<PopularProductsWidgetProps> = ({
-	products,
+	productsData,
 }) => {
 	const [activeCategory, setActiveCategory] = useState<string>('Phones')
 	const [fillColors, setFillColors] = useState<
@@ -34,7 +34,7 @@ const PopularProductsWidget: React.FC<PopularProductsWidgetProps> = ({
 
 	const categorizedProducts = categories.map(category => ({
 		category,
-		items: products.filter(product => product.category === category),
+		items: productsData.filter(product => product.category === category),
 	}))
 
 	const changeColor = (id: number) => {
@@ -68,11 +68,7 @@ const PopularProductsWidget: React.FC<PopularProductsWidgetProps> = ({
 						.find(cat => cat.category === activeCategory)
 						?.items.map(product => (
 							<ProductCardWidget
-								key={product.id}
-								id={product.id}
-								img={product.img}
-								title={product.title}
-								price={product.price}
+								{...product}
 								fillColors={
 									fillColors[product.id] || {
 										fill: '#f6f6f6',

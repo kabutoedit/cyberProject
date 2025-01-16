@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './style.module.scss';
 import '../../app/index.css';
 import ProductCardWidget from '../productCardWidget/productCardWidget';
-const PopularProductsWidget = ({ products, }) => {
+const PopularProductsWidget = ({ productsData, }) => {
     const [activeCategory, setActiveCategory] = useState('Phones');
     const [fillColors, setFillColors] = useState({});
     const categories = [
@@ -15,7 +15,7 @@ const PopularProductsWidget = ({ products, }) => {
     ];
     const categorizedProducts = categories.map(category => ({
         category,
-        items: products.filter(product => product.category === category),
+        items: productsData.filter(product => product.category === category),
     }));
     const changeColor = (id) => {
         setFillColors(prevState => ({
@@ -32,7 +32,7 @@ const PopularProductsWidget = ({ products, }) => {
                 React.createElement("p", null, category))))),
             React.createElement("div", { className: styles.products }, categorizedProducts
                 .find(cat => cat.category === activeCategory)
-                ?.items.map(product => (React.createElement(ProductCardWidget, { key: product.id, id: product.id, img: product.img, title: product.title, price: product.price, fillColors: fillColors[product.id] || {
+                ?.items.map(product => (React.createElement(ProductCardWidget, { ...product, fillColors: fillColors[product.id] || {
                     fill: '#f6f6f6',
                     stroke: '#A8A8A8',
                 }, onHeartClick: () => changeColor(product.id) })))))));

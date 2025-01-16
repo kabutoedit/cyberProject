@@ -5,15 +5,27 @@ footer {
   padding: 104px 160px;
 }
 footer .info {
-  margin-right: 113px;
+  display: flex;
+  margin-bottom: 24px;
 }
 footer .info .logo {
+  width: 384px;
   display: flex;
   flex-direction: column;
+  margin-right: 113px;
 }
 footer .info .logo .img {
   height: 22px;
+  margin-bottom: 24px;
 }
 footer .info .logo .logoTxt {
+  color: #fff;
   font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 170.5%;
+}
+footer .social {
+  display: flex;
+  gap: 36px;
 }/*# sourceMappingURL=style.module.css.map */

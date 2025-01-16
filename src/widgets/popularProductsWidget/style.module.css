@@ -10,73 +10,25 @@
   margin-bottom: 32px;
 }
 .popularProducts .tags .tag {
-  width: 100px;
   font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 32px;
   color: #8b8b8b;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  flex: 0;
 }
-.popularProducts .tags .active {
+.popularProducts .tags .active p {
+  display: inline-block;
   color: black;
   border-bottom: 2px solid #000;
+  padding: 0;
+  margin: 0;
 }
 .popularProducts .products {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-}
-.popularProducts .products .product {
-  width: 268px;
-  background-color: #f6f6f6;
-  padding: 0 16px;
-  border-radius: 9px;
-}
-.popularProducts .products .product .heart {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 24px;
-  margin-bottom: 16px;
-}
-.popularProducts .products .product .img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 160px;
-  height: 160px;
-  margin: 0 auto;
-  margin-bottom: 16px;
-}
-.popularProducts .products .product .description {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  text-align: center;
-  margin-bottom: 24px;
-}
-.popularProducts .products .product .description .title {
-  height: 48px;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-}
-.popularProducts .products .product .description .price {
-  font-family: "Inter", sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 24px;
-}
-.popularProducts .products .product Button {
-  width: 188px;
-  height: 48px;
-  background-color: #111;
-  color: #fff;
-  border-radius: 8px;
-  margin: 0 auto;
-  margin-bottom: 24px;
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 24px;
 }/*# sourceMappingURL=style.module.css.map */

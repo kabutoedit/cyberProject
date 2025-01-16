@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function Button() {
 	return (
-		<Link to='/products'>
+		<Link to='/catalog'>
 			<button className={styles.btn}>Shop now</button>
 		</Link>
 	)

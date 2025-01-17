@@ -1,12 +1,14 @@
 import React from 'react'
 import styles from './style.module.scss'
-import ButtonWidget from '../buttonWidget/ButtonWidget'
+import ButtonBuyWidget from '../buttonBuyWidget/ButtonBuyWidget'
+import { useDispatch } from 'react-redux'
+import { addProductToCart } from '../../app/store/slice'
 
 interface ProductCardProps {
 	id: number
 	img: string
 	title: string
-	price: string
+	price: number
 	fillColors: { fill: string; stroke: string }
 	onHeartClick: () => void
 }
@@ -19,6 +21,12 @@ const ProductCard: React.FC<ProductCardProps> = ({
 	fillColors,
 	onHeartClick,
 }) => {
+	const dispatch = useDispatch()
+
+	const handleAddToCart = () => {
+		dispatch(addProductToCart({ id, img, name: title, price, quantity: 1 }))
+	}
+
 	return (
 		<div className={styles.product}>
 			<h6 className={styles.heart}>
@@ -45,9 +53,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
 			</div>
 			<div className={styles.description}>
 				<p className={styles.title}>{title}</p>
-				<h2 className={styles.price}>{price}</h2>
+				<h2 className={styles.price}>{price}$</h2>
 			</div>
-			<ButtonWidget />
+			<ButtonBuyWidget onClick={handleAddToCart} />
 		</div>
 	)
 }

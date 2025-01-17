@@ -7,7 +7,6 @@ header {
 	.head {
 		display: flex;
 		justify-content: space-between;
-		// gap: 56px;
 		align-items: center;
 
 		.searchLabel {
@@ -54,5 +53,25 @@ header {
 	.btns {
 		display: flex;
 		gap: 21px;
+
+		.cartBtn {
+			position: relative;
+
+			span {
+				width: 16px;
+				background-color: #f55123;
+				position: absolute;
+				top: -25%;
+				left: 90%;
+				border-radius: 50%;
+
+				font-family: 'Inter', sans-serif;
+				font-size: 12px;
+				font-weight: 500;
+				line-height: 16px;
+				text-align: center;
+				color: #fff;
+			}
+		}
 	}
 }

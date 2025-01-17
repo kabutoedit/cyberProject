@@ -1,0 +1,14 @@
+.btn {
+  width: 191px;
+  height: 56px;
+  background-color: inherit;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+}/*# sourceMappingURL=style.module.css.map */

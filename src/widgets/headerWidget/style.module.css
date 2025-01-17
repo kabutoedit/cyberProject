@@ -43,4 +43,21 @@ header .logo {
 header .btns {
   display: flex;
   gap: 21px;
+}
+header .btns .cartBtn {
+  position: relative;
+}
+header .btns .cartBtn span {
+  width: 16px;
+  background-color: #f55123;
+  position: absolute;
+  top: -25%;
+  left: 90%;
+  border-radius: 50%;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  color: #fff;
 }/*# sourceMappingURL=style.module.css.map */

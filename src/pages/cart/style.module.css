@@ -1,1 +1,176 @@
-/*# sourceMappingURL=style.module.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+.cartPageContent {
+  height: 656px;
+  margin: 112px 0;
+  display: flex;
+  gap: 48px;
+}
+.cartPageContent .addedProducts {
+  overflow: scroll;
+  width: 536px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.cartPageContent .addedProducts .cartTitle {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.cartPageContent .addedProducts .products {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.cartPageContent .addedProducts .products .product {
+  height: 138px;
+  display: flex;
+  align-items: center;
+  border-bottom: #a3a3a3 0.5px solid;
+}
+.cartPageContent .addedProducts .products .product .productImg {
+  height: 90px;
+  margin-right: 15px;
+}
+.cartPageContent .addedProducts .products .product .productName {
+  width: 191px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.cartPageContent .addedProducts .products .product .btns {
+  height: 32px;
+  display: flex;
+  gap: 8px;
+}
+.cartPageContent .addedProducts .products .product .btns button {
+  width: 24px;
+  height: 15px;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+.cartPageContent .addedProducts .products .product .btns span {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 4px;
+  border: #d9d9d9 1px solid;
+}
+.cartPageContent .addedProducts .products .product .productPrice {
+  margin-right: 24px;
+  margin-left: 24px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.cartPageContent .addedProducts .products .product .delete {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.cartPageContent .addedProducts .products .product:last-child {
+  border: none;
+}
+.cartPageContent .orderSum {
+  width: 536px;
+  display: flex;
+  flex-direction: column;
+  padding: 56px 64px;
+  border: #ebebeb 1px solid;
+  border-radius: 10px;
+}
+.cartPageContent .orderSum .orderSumTitle {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 16px;
+  margin-bottom: 40px;
+}
+.cartPageContent .orderSum .label {
+  position: relative;
+}
+.cartPageContent .orderSum .label .inputText {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #545454;
+  margin-bottom: 8px;
+}
+.cartPageContent .orderSum .label input::-webkit-outer-spin-button,
+.cartPageContent .orderSum .label input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.cartPageContent .orderSum .label .input {
+  height: 56px;
+  border: #9f9f9f 1px solid;
+  border-radius: 7px;
+  padding-left: 16px;
+  margin-bottom: 24px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #979797;
+}
+.cartPageContent .orderSum .label .apply {
+  position: absolute;
+  top: 35%;
+  right: 3%;
+  width: 76px;
+  height: 32px;
+  border: #000 1px solid;
+  border-radius: 6px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.cartPageContent .orderSum .text {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.cartPageContent .orderSum .text p {
+  color: #000;
+}
+.cartPageContent .orderSum .additionsToThePrice {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.cartPageContent .orderSum .additionsToThePrice .grayText {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 3%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #545454;
+}
+.cartPageContent .orderSum .btn {
+  height: 56px;
+  background-color: #000;
+  border-radius: 6px;
+  margin-top: 28px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}/*# sourceMappingURL=style.module.css.map */

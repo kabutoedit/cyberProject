@@ -3,8 +3,13 @@ import Nav from '../../app/navigation/Nav.js'
 import styles from './style.module.scss'
 import '../../app/index.css'
 import { NavLink } from 'react-router-dom'
-
+import { useSelector } from 'react-redux'
+import { RootState } from '../../app/store/store.js'
 export default function Header() {
+	const totalQuantity = useSelector(
+		(state: RootState) => state.cart.totalQuantity
+	)
+
 	return (
 		<header>
 			<div className='container'>
@@ -71,6 +76,7 @@ export default function Header() {
 									stroke-linejoin='round'
 								/>
 							</svg>
+							<span>{totalQuantity === 0 ? '' : totalQuantity}</span>
 						</NavLink>
 						<NavLink to={'/login'} className={styles.loginBtn}>
 							<svg

@@ -1,7 +1,13 @@
 import React from 'react';
 import styles from './style.module.scss';
-import ButtonWidget from '../buttonWidget/ButtonWidget';
+import ButtonBuyWidget from '../buttonBuyWidget/ButtonBuyWidget';
+import { useDispatch } from 'react-redux';
+import { addProductToCart } from '../../app/store/slice';
 const ProductCard = ({ id, img, title, price, fillColors, onHeartClick, }) => {
+    const dispatch = useDispatch();
+    const handleAddToCart = () => {
+        dispatch(addProductToCart({ id, img, name: title, price, quantity: 1 }));
+    };
     return (React.createElement("div", { className: styles.product },
         React.createElement("h6", { className: styles.heart },
             React.createElement("svg", { width: '32', height: '32', viewBox: '0 0 32 32', xmlns: 'http://www.w3.org/2000/svg', onClick: onHeartClick, style: {
@@ -13,7 +19,9 @@ const ProductCard = ({ id, img, title, price, fillColors, onHeartClick, }) => {
             React.createElement("img", { src: img, alt: title })),
         React.createElement("div", { className: styles.description },
             React.createElement("p", { className: styles.title }, title),
-            React.createElement("h2", { className: styles.price }, price)),
-        React.createElement(ButtonWidget, null)));
+            React.createElement("h2", { className: styles.price },
+                price,
+                "$")),
+        React.createElement(ButtonBuyWidget, { onClick: handleAddToCart })));
 };
 export default ProductCard;

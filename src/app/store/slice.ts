@@ -10,11 +10,13 @@ interface CartItem {
 
 interface CartState {
 	items: CartItem[]
+	totalQuantity: number
 	totalPrice: number
 }
 
 const initialState: CartState = {
 	items: [],
+	totalQuantity: 0,
 	totalPrice: 0,
 }
 
@@ -33,6 +35,7 @@ const cartSlice = createSlice({
 				state.items.push(action.payload)
 			}
 
+			state.totalQuantity += action.payload.quantity
 			state.totalPrice += action.payload.price * action.payload.quantity
 		},
 
@@ -41,6 +44,7 @@ const cartSlice = createSlice({
 			const itemIndex = state.items.findIndex(item => item.id === id)
 
 			if (itemIndex !== -1) {
+				state.totalQuantity -= state.items[itemIndex].quantity
 				state.totalPrice -=
 					state.items[itemIndex].price * state.items[itemIndex].quantity
 
@@ -58,6 +62,7 @@ const cartSlice = createSlice({
 				const quantityChange = quantity - existingItem.quantity
 				existingItem.quantity = quantity
 
+				state.totalQuantity += quantityChange
 				state.totalPrice += quantityChange * existingItem.price
 			}
 		},

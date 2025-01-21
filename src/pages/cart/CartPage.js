@@ -17,7 +17,7 @@ const Cart = () => {
             React.createElement("div", { className: styles.cartPageContent },
                 React.createElement("div", { className: styles.addedProducts },
                     React.createElement("h3", { className: styles.cartTitle }, "Shopping Cart"),
-                    React.createElement("div", { className: styles.products }, items.map(item => (React.createElement("div", { className: styles.product },
+                    React.createElement("div", { className: styles.products }, items.map(item => (React.createElement("div", { key: item.id, className: styles.product },
                         React.createElement("div", { className: styles.productImg },
                             React.createElement("img", { src: item.img, alt: item.name })),
                         React.createElement("p", { className: styles.productName }, item.name),

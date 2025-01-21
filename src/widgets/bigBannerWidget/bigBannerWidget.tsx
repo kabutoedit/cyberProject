@@ -7,7 +7,7 @@ export default function bigBannerWidget() {
 		<section className={styles.bigBannerWidget}>
 			<div className={styles.content}>
 				<h2 className={styles.bigBannerText}>
-					Big Summer <h2 className={styles.big}>Sale</h2>
+					Big Summer <p className={styles.big}>Sale</p>
 				</h2>
 				<p className={styles.bigBannerTxt}>
 					Commodo fames vitae vitae leo mauris in. Eu consequat.

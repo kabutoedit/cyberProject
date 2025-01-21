@@ -69,6 +69,7 @@ const PopularProductsWidget: React.FC<PopularProductsWidgetProps> = ({
 						?.items.map(product => (
 							<ProductCardWidget
 								{...product}
+								key={product.id}
 								fillColors={
 									fillColors[product.id] || {
 										fill: '#f6f6f6',

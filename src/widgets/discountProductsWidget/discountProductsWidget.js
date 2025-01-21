@@ -16,7 +16,7 @@ const DiscountProductsWidget = ({ productsData, }) => {
     return (React.createElement("section", { className: styles.discountProducts },
         React.createElement("div", { className: 'container' },
             React.createElement("h2", { className: styles.discountProductsTitle }, "Discounts up to -50%"),
-            React.createElement("div", { className: styles.products }, productsData.slice(20, 24).map(product => (React.createElement(ProductCardWidget, { ...product, fillColors: fillColors[product.id] || {
+            React.createElement("div", { className: styles.products }, productsData.slice(20, 24).map(product => (React.createElement(ProductCardWidget, { ...product, key: product.id, fillColors: fillColors[product.id] || {
                     fill: '#f6f6f6',
                     stroke: '#A8A8A8',
                 }, onHeartClick: () => changeColor(product.id) })))))));

@@ -13,7 +13,7 @@ export default function ProductsWidget() {
 							<div className={styles.description}>
 								<p>Pro.Beyond.</p>
 								<h2 className={styles.iphoneText}>
-									IPhone 14 <h2 className={styles.pro}> Pro</h2>
+									IPhone 14 <h3 className={styles.pro}> Pro</h3>
 								</h2>
 								<p className={styles.iphoneTxt}>
 									Created to change everything for the better. For everyone
@@ -39,9 +39,9 @@ export default function ProductsWidget() {
 						<div className={styles.appleProduct}>
 							<div className={styles.appleProductImg}></div>
 							<div className={styles.appleProductIn}>
-								<h3 className={styles.appleProductText}>
+								<h2 className={styles.appleProductText}>
 									Apple AirPods <h3 className={styles.bold}>Max</h3>
-								</h3>
+								</h2>
 								<p className={styles.appleProductTxt}>
 									Computational audio. Listen, it's powerful
 								</p>
@@ -50,9 +50,9 @@ export default function ProductsWidget() {
 						<div className={`${styles.appleProduct} ${styles.appleProduct2}`}>
 							<div className={styles.appleProductImg}></div>
 							<div className={styles.appleProductIn}>
-								<h3 className={styles.appleProductText}>
+								<h2 className={styles.appleProductText}>
 									Apple <br /> Vision <h3 className={styles.bold}>Pro</h3>
-								</h3>
+								</h2>
 								<p className={styles.appleProductTxt}>
 									An immersive way to experience entertainment
 								</p>
@@ -61,9 +61,9 @@ export default function ProductsWidget() {
 					</div>
 					<div className={styles.macBook}>
 						<div className={styles.macBookIn}>
-							<h4 className={styles.macBookText}>
-								Macbook <h4 className={styles.bold}>Air</h4>
-							</h4>
+							<h2 className={styles.macBookText}>
+								Macbook <h3 className={styles.bold}>Air</h3>
+							</h2>
 							<p className={styles.macBookTxt}>
 								The new 15‑inch MacBook Air makes room for more of what you love
 								with a spacious Liquid Retina display.

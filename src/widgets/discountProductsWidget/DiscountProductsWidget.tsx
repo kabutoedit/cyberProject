@@ -40,6 +40,7 @@ const DiscountProductsWidget: React.FC<DiscountProductsWidgetProps> = ({
 					{productsData.slice(20, 24).map(product => (
 						<ProductCardWidget
 							{...product}
+							key={product.id}
 							fillColors={
 								fillColors[product.id] || {
 									fill: '#f6f6f6',

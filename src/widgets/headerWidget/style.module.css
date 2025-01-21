@@ -60,4 +60,7 @@ header .btns .cartBtn span {
   line-height: 16px;
   text-align: center;
   color: #fff;
+}
+header .btns .loginBtn {
+  cursor: pointer;
 }/*# sourceMappingURL=style.module.css.map */

@@ -28,7 +28,7 @@ const Cart: React.FC = () => {
 						<h3 className={styles.cartTitle}>Shopping Cart</h3>
 						<div className={styles.products}>
 							{items.map(item => (
-								<div className={styles.product}>
+								<div key={item.id} className={styles.product}>
 									<div className={styles.productImg}>
 										<img src={item.img} alt={item.name} />
 									</div>

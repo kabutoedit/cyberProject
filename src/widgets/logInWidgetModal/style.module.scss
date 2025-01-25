@@ -44,6 +44,19 @@
 			background-color: #0056b3;
 		}
 	}
+
+	.googleButton {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+
+		font-family: 'Inter', sans-serif;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		text-align: center;
+	}
 }
 .modalWidget {
 	position: relative;
@@ -112,6 +125,10 @@
 				&:hover {
 					background-color: #0056b3;
 				}
+			}
+
+			.logoutButton {
+				margin-top: 15px;
 			}
 
 			.closeButtonX {

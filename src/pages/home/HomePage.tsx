@@ -28,7 +28,6 @@ const HomePage: React.FC<HomePageProps> = ({ productsData }) => {
 			<BannersWidget />
 			<DiscountProductsWidget productsData={productsData} />
 			<BigBannerWidget />
-			<LoginWidgetModal />
 		</>
 	)
 }

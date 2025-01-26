@@ -73,7 +73,7 @@ function App() {
 			id: 8,
 			img: 'src/app/img/productsImg/galaxyBuds.png',
 			title: 'Galaxy Buds FE Graphite',
-			price: 99.99,
+			price: 99,
 			category: 'Headphones',
 		},
 		{

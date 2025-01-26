@@ -17,7 +17,7 @@ export default function Header() {
 			<div className='container'>
 				<div className={styles.head}>
 					<NavLink to='/' className={styles.logo}>
-						<img src='/src/app/img/icons/logo.png' alt='logo' />
+						<img src='/logo.png' alt='logo' />
 					</NavLink>
 					<label className={styles.searchLabel} htmlFor='search'>
 						<svg

@@ -5,7 +5,6 @@ import BannersWidget from '../../widgets/bannersWidget/BannersWidget'
 import DiscountProductsWidget from '../../widgets/discountProductsWidget/DiscountProductsWidget'
 import BigBannerWidget from '../../widgets/bigBannerWidget/bigBannerWidget'
 import PopularProductsWidget from '../../widgets/popularProductsWidget/PopularProductsWidget'
-import LoginWidgetModal from '../../widgets/logInWidgetModal/logInWidgetModal'
 
 interface Product {
 	id: number

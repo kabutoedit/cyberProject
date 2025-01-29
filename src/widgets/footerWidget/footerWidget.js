@@ -10,7 +10,7 @@ export default function FooterWidget() {
                 React.createElement("div", { className: styles.logo },
                     React.createElement(NavLink, { to: '/', className: styles.logo },
                         React.createElement("div", { className: styles.img },
-                            React.createElement("img", { src: 'src/widgets/footerWidget/img/logo.png', alt: 'logo' }))),
+                            React.createElement("img", { src: '/whiteLogo.png', alt: 'logo' }))),
                     React.createElement("p", { className: styles.logoTxt }, "We are a residential interior design firm located in Portland. Our boutique-studio offers more than")),
                 React.createElement(FooterNav, null)),
             React.createElement("div", { className: styles.social },

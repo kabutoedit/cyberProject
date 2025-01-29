@@ -12,7 +12,7 @@ export default function FooterWidget() {
 					<div className={styles.logo}>
 						<NavLink to='/' className={styles.logo}>
 							<div className={styles.img}>
-								<img src='src/widgets/footerWidget/img/logo.png' alt='logo' />
+								<img src='/whiteLogo.png' alt='logo' />
 							</div>
 						</NavLink>
 						<p className={styles.logoTxt}>

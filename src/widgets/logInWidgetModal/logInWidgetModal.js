@@ -155,7 +155,7 @@
 // export default LoginWidgetModal
 import React, { useState, useEffect } from 'react';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { auth, LogIn, LogOut } from '../../app/firebase/firebaseConfig';
+import { auth, LogIn, LogOut } from '../../app/dataBase/firebaseConfig';
 import styles from './style.module.scss';
 const LoginWidgetModal = ({ isModalOpen, setIsModalOpen }) => {
     const [email, setEmail] = useState('');

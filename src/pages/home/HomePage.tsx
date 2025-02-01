@@ -8,7 +8,7 @@ import PopularProductsWidget from '../../widgets/popularProductsWidget/PopularPr
 
 interface Product {
 	id: number
-	img: string
+	imageUrl: string
 	title: string
 	price: number
 	category: string

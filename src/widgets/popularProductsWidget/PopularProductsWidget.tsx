@@ -5,7 +5,7 @@ import ProductCardWidget from '../productCardWidget/productCardWidget'
 
 interface Product {
 	id: number
-	img: string
+	imageUrl: string
 	title: string
 	price: number
 	category: string

@@ -12,24 +12,7 @@ import FooterWidget from '../widgets/footerWidget/FooterWidget';
 import CatalogPage from '../pages/catalogPage/CatalogPage';
 function App() {
     const [productsData, setProductsData] = useState([]);
-    // 	useEffect(() => {
-    // 		const loadProducts = async () => {
-    // 			const productsArray = await fetchProducts()
-    // 			setProductsData(productsArray)
-    // 		}
-    // 		loadProducts()
-    // 	}, [])
     useEffect(() => {
-        // Функция для получения продуктов с сервера
-        // const getProductsFromServer = async () => {
-        // 	try {
-        // 		const response = await axios.get('http://localhost:4000/products') // Ваш внешний API
-        // 		console.log('Полученные данные:', response.data)
-        // 		setProductsData(response.data) // Обновление состояния с данными
-        // 	} catch (error) {
-        // 		console.error('Ошибка получения данных с API:', error)
-        // 	}
-        // }
         const getProductsFromServer = async () => {
             try {
                 const response = await axios.get('http://localhost:4000/products');

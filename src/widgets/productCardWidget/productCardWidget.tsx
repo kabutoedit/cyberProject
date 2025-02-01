@@ -6,7 +6,7 @@ import { addProductToCart } from '../../app/store/slice'
 
 interface ProductCardProps {
 	id: number
-	img: string
+	imageUrl: string
 	title: string
 	price: number
 	fillColors: { fill: string; stroke: string }
@@ -15,7 +15,7 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({
 	id,
-	img,
+	imageUrl,
 	title,
 	price,
 	fillColors,
@@ -24,7 +24,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
 	const dispatch = useDispatch()
 
 	const handleAddToCart = () => {
-		dispatch(addProductToCart({ id, img, name: title, price, quantity: 1 }))
+		dispatch(
+			addProductToCart({ id, img: imageUrl, name: title, price, quantity: 1 })
+		)
 	}
 
 	return (
@@ -49,7 +51,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
 				</svg>
 			</h6>
 			<div className={styles.img}>
-				<img src={img} alt={title} />
+				<img src={imageUrl} alt={title} />
 			</div>
 			<div className={styles.description}>
 				<p className={styles.title}>{title}</p>

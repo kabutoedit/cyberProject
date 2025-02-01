@@ -19,6 +19,7 @@ function App() {
 			try {
 				const response = await axios.get('http://localhost:4000/products')
 				console.log('Ответ от сервера:', response)
+
 				if (response.data && response.data.length > 0) {
 					setProductsData(response.data)
 				} else {

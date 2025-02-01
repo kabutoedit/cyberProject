@@ -10,7 +10,6 @@ import ContactUs from '../pages/contactUs/ContactUs'
 import Blog from '../pages/blog/Blog'
 import FooterWidget from '../widgets/footerWidget/FooterWidget'
 import CatalogPage from '../pages/catalogPage/CatalogPage'
-import { fetchProducts } from './dataBase/firebaseConfig'
 
 function App() {
 	const [productsData, setProductsData] = useState([])

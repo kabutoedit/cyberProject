@@ -10,6 +10,7 @@ import ContactUs from '../pages/contactUs/ContactUs';
 import Blog from '../pages/blog/Blog';
 import FooterWidget from '../widgets/footerWidget/FooterWidget';
 import CatalogPage from '../pages/catalogPage/CatalogPage';
+import NotFoundPage from '../pages/NotFoundPage/NotFoundPage';
 function App() {
     const [productsData, setProductsData] = useState([]);
     useEffect(() => {
@@ -38,7 +39,8 @@ function App() {
             React.createElement(Route, { path: '/contactUs', element: React.createElement(ContactUs, null) }),
             React.createElement(Route, { path: '/blog', element: React.createElement(Blog, null) }),
             React.createElement(Route, { path: '/cart', element: React.createElement(Cart, null) }),
-            React.createElement(Route, { path: '/catalog', element: React.createElement(CatalogPage, { productsData: productsData }) })),
+            React.createElement(Route, { path: '/catalog', element: React.createElement(CatalogPage, { productsData: productsData }) }),
+            React.createElement(Route, { path: '*', element: React.createElement(NotFoundPage, null) })),
         React.createElement(FooterWidget, null)));
 }
 export default App;

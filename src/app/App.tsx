@@ -10,6 +10,7 @@ import ContactUs from '../pages/contactUs/ContactUs'
 import Blog from '../pages/blog/Blog'
 import FooterWidget from '../widgets/footerWidget/FooterWidget'
 import CatalogPage from '../pages/catalogPage/CatalogPage'
+import NotFoundPage from '../pages/NotFoundPage/NotFoundPage'
 
 function App() {
 	const [productsData, setProductsData] = useState([])
@@ -46,6 +47,7 @@ function App() {
 					path='/catalog'
 					element={<CatalogPage productsData={productsData} />}
 				/>
+				<Route path='*' element={<NotFoundPage />} />
 			</Routes>
 			<FooterWidget />
 		</>

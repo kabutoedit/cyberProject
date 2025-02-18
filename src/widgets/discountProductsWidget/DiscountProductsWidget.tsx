@@ -37,10 +37,10 @@ const DiscountProductsWidget: React.FC<DiscountProductsWidgetProps> = ({
 			<div className='container'>
 				<h2 className={styles.discountProductsTitle}>Discounts up to -50%</h2>
 				<div className={styles.products}>
-					{productsData.slice(20, 24).map(product => (
+					{productsData.slice(20, 24).map((product, index) => (
 						<ProductCardWidget
 							{...product}
-							key={product.id}
+							key={product.id ?? index}
 							fillColors={
 								fillColors[product.id] || {
 									fill: '#f6f6f6',

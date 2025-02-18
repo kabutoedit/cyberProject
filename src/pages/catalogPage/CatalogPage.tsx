@@ -126,10 +126,10 @@ const CatalogPage: React.FC<CatalogPageProps> = ({ productsData }) => {
 							</button>
 						</div>
 						<div className={styles.products}>
-							{paginatedProducts.map(product => (
+							{paginatedProducts.map((product, index) => (
 								<ProductCardWidget
 									{...product}
-									key={product.id}
+									key={product.id ?? index}
 									fillColors={
 										fillColors[product.id] || {
 											fill: '#f6f6f6',

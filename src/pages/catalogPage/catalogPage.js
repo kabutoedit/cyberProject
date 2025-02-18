@@ -72,7 +72,7 @@ const CatalogPage = ({ productsData }) => {
                             React.createElement("span", { className: styles.arrow },
                                 React.createElement("svg", { width: '24', height: '24', viewBox: '0 0 24 24', fill: 'none', xmlns: 'http://www.w3.org/2000/svg' },
                                     React.createElement("path", { d: 'M6 9L12 15L18 9', stroke: '#9F9F9F' }))))),
-                    React.createElement("div", { className: styles.products }, paginatedProducts.map(product => (React.createElement(ProductCardWidget, { ...product, key: product.id, fillColors: fillColors[product.id] || {
+                    React.createElement("div", { className: styles.products }, paginatedProducts.map((product, index) => (React.createElement(ProductCardWidget, { ...product, key: product.id ?? index, fillColors: fillColors[product.id] || {
                             fill: '#f6f6f6',
                             stroke: '#A8A8A8',
                         }, onHeartClick: () => changeColor(product.id) })))),

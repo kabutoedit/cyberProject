@@ -1,5 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
+// типизация продукта
 interface CartItem {
 	id: number
 	img: string
@@ -8,40 +9,48 @@ interface CartItem {
 	quantity: number
 }
 
+// типизация нашего состояния
 interface CartState {
 	items: CartItem[]
 	totalQuantity: number
 	totalPrice: number
 }
 
-const initialState: CartState = {
-	items: [],
-	totalQuantity: 0,
-	totalPrice: 0,
-}
-
+// слайс для управления состоянием корзины
 const cartSlice = createSlice({
 	name: 'cart',
-	initialState,
+	initialState: {
+		items: [] as CartItem[],
+		totalQuantity: 0,
+		totalPrice: 0,
+	} as CartState,
 	reducers: {
+		// добавление товара в корзину
 		addProductToCart(state, action: PayloadAction<CartItem>) {
+			// находим существующий (продукт)
 			const existingItem = state.items.find(
 				item => item.id === action.payload.id
 			)
 
+			// если он найден мы увеличиваем его количество на 1, общее количество товаров и общую сумму
 			if (existingItem) {
-				existingItem.quantity += action.payload.quantity
-			} else {
-				state.items.push(action.payload)
+				existingItem.quantity += 1
+				state.totalQuantity += action.payload.quantity
+				state.totalPrice += action.payload.quantity * action.payload.price
 			}
-
-			state.totalQuantity += action.payload.quantity
-			state.totalPrice += action.payload.price * action.payload.quantity
+			// в противном же случае просто добавляю его в корзину и увеличивю общее количество товаров и общую сумму
+			else {
+				state.items.push(action.payload)
+				state.totalQuantity += action.payload.quantity
+				state.totalPrice += action.payload.quantity * action.payload.price
+			}
 		},
 
+		// удаление товара из корзины
 		removeProductFromCart(state, action: PayloadAction<number>) {
-			const id = action.payload
-			const itemIndex = state.items.findIndex(item => item.id === id)
+			const itemIndex = state.items.findIndex(
+				item => item.id === action.payload
+			)
 
 			if (itemIndex !== -1) {
 				state.totalQuantity -= state.items[itemIndex].quantity
@@ -51,6 +60,8 @@ const cartSlice = createSlice({
 				state.items.splice(itemIndex, 1)
 			}
 		},
+
+		// управление количеством товара
 		updateProductQuantity(
 			state,
 			action: PayloadAction<{ id: number; quantity: number }>
@@ -64,6 +75,10 @@ const cartSlice = createSlice({
 
 				state.totalQuantity += quantityChange
 				state.totalPrice += quantityChange * existingItem.price
+
+				if (existingItem.quantity <= 0) {
+					state.items = state.items.filter(item => item.id !== id)
+				}
 			}
 		},
 	},

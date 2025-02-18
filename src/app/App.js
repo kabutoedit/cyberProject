@@ -29,7 +29,7 @@ function App() {
                 console.error('Ошибка получения данных с API:', error);
             }
         };
-        getProductsFromServer(); // Вызываем функцию при монтировании компонента
+        getProductsFromServer();
     }, []);
     return (React.createElement(React.Fragment, null,
         React.createElement(HeaderWidget, null),

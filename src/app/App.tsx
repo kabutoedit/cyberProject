@@ -31,7 +31,7 @@ function App() {
 			}
 		}
 
-		getProductsFromServer() // Вызываем функцию при монтировании компонента
+		getProductsFromServer()
 	}, [])
 
 	return (

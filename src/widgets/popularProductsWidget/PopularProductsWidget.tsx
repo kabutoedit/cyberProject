@@ -66,10 +66,10 @@ const PopularProductsWidget: React.FC<PopularProductsWidgetProps> = ({
 				<div className={styles.products}>
 					{categorizedProducts
 						.find(cat => cat.category === activeCategory)
-						?.items.map(product => (
+						?.items.map((product, index) => (
 							<ProductCardWidget
 								{...product}
-								key={product.id}
+								key={product.id ?? index}
 								fillColors={
 									fillColors[product.id] || {
 										fill: '#f6f6f6',

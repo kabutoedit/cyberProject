@@ -1,238 +1,145 @@
 module.exports = [
   {
     "_id": "6799fbd32e4c98bd0069aab1",
-    "id": 5,
-    "title": "Blackmagic Pocket Cinema Camera 6k",
     "price": 2535,
-    "category": "Cameras",
     "imageId": "679e278d32e701c3f5de3478",
     "imageUrl": "http://localhost:4000/image/679e278d32e701c3f5de3478"
   },
   {
     "_id": "6799fbd32e4c98bd0069aabd",
-    "id": 17,
-    "img": "src/app/img/productsImg/steamDeck.png",
-    "title": "Valve Steam Deck 512GB Handheld Gaming Console",
     "price": 649,
-    "category": "Gaming",
     "imageId": "679e2a4832e701c3f5de3494",
     "imageUrl": "http://localhost:4000/image/679e2a4832e701c3f5de3494"
   },
   {
     "_id": "6799fbd32e4c98bd0069aac2",
-    "id": 22,
-    "img": "src/app/img/productsImg/dellXPS.png",
-    "title": "Dell XPS 15 9520 Laptop 15.6\" UHD+ Touch, Intel i9",
     "price": 2799,
-    "category": "Computers",
     "imageId": "679e299a32e701c3f5de3489",
     "imageUrl": "http://localhost:4000/image/679e299a32e701c3f5de3489"
   },
   {
     "_id": "6799fbd32e4c98bd0069aac3",
-    "id": 23,
-    "img": "src/app/img/productsImg/hpSpectre.png",
-    "title": "HP Spectre x360 14\" 2-in-1 Laptop, Intel i7",
     "price": 1499,
-    "category": "Computers",
     "imageId": "679e29a932e701c3f5de348b",
     "imageUrl": "http://localhost:4000/image/679e29a932e701c3f5de348b"
   },
   {
     "_id": "6799fbd32e4c98bd0069aac4",
-    "id": 24,
-    "img": "src/app/img/productsImg/lenovoThinkPad.png",
-    "title": "Lenovo ThinkPad X1 Carbon Gen 11, Intel i7",
     "price": 1699,
-    "category": "Computers",
     "imageId": "679e29b832e701c3f5de348d",
     "imageUrl": "http://localhost:4000/image/679e29b832e701c3f5de348d"
   },
   {
     "_id": "6799fbd32e4c98bd0069aaae",
-    "id": 2,
-    "img": "src/app/img/productsImg/airPodsMax.png",
-    "title": "AirPods Max Silver Starlight Aluminium",
     "price": 549,
-    "category": "Headphones",
     "imageId": "679e25ad32e701c3f5de345a",
     "imageUrl": "http://localhost:4000/image/679e25ad32e701c3f5de345a"
   },
   {
     "_id": "6799fbd32e4c98bd0069aab0",
-    "id": 4,
-    "title": "Apple iPhone 14 Pro 1TB Gold (MQ2V3)",
     "price": 1499,
-    "category": "Phones",
     "imageId": "679a37b97a978633d6f8c97a",
     "imageUrl": "http://localhost:4000/image/679a37b97a978633d6f8c97a"
   },
   {
     "_id": "6799fbd32e4c98bd0069aab8",
-    "id": 12,
-    "img": "src/app/img/productsImg/ps5.png",
-    "title": "Sony PlayStation 5 Digital Edition 825GB",
     "price": 449,
-    "category": "Gaming",
     "imageId": "679e2a5d32e701c3f5de3498",
     "imageUrl": "http://localhost:4000/image/679e2a5d32e701c3f5de3498"
   },
   {
     "_id": "6799fbd32e4c98bd0069aabf",
-    "id": 19,
-    "img": "src/app/img/productsImg/canonCamera.png",
-    "title": "Canon EOS R5 Full Frame Mirrorless Camera",
     "price": 3899,
-    "category": "Cameras",
     "imageId": "679e27ba32e701c3f5de347a",
     "imageUrl": "http://localhost:4000/image/679e27ba32e701c3f5de347a"
   },
   {
     "_id": "6799fbd32e4c98bd0069aac0",
-    "id": 20,
-    "img": "src/app/img/productsImg/nikonCamera.png",
-    "title": "Nikon Z6 II FX Mirrorless Camera",
     "price": 1999,
-    "category": "Cameras",
     "imageId": "679e27e432e701c3f5de3481",
     "imageUrl": "http://localhost:4000/image/679e27e432e701c3f5de3481"
   },
   {
     "_id": "6799fbd32e4c98bd0069aaad",
-    "id": 1,
-    "title": "Apple iPhone 14 Pro 512GB Silver (MQ233)",
     "price": 1437,
-    "category": "Phones",
     "imageId": "679e245932e701c3f5de3456",
     "imageUrl": "http://localhost:4000/image/679e245932e701c3f5de3456"
   },
   {
     "_id": "6799fbd32e4c98bd0069aab2",
-    "id": 6,
-    "img": "src/app/img/productsImg/samsungWatch.png",
-    "title": "Samsung Galaxy Watch6 Classic 47mm Black",
     "price": 369,
-    "category": "Watches",
     "imageId": "679e28e832e701c3f5de3485",
     "imageUrl": "http://localhost:4000/image/679e28e832e701c3f5de3485"
   },
   {
     "_id": "6799fbd32e4c98bd0069aab9",
-    "id": 13,
-    "img": "src/app/img/productsImg/appleWatchUltra.png",
-    "title": "Apple Watch Ultra 2 GPS + Cellular 49mm Titanium Case",
     "price": 799,
-    "category": "Watches",
     "imageId": "679e25e632e701c3f5de345e",
     "imageUrl": "http://localhost:4000/image/679e25e632e701c3f5de345e"
   },
   {
     "_id": "6799fbd32e4c98bd0069aaba",
-    "id": 14,
-    "img": "src/app/img/productsImg/sonyCamera.png",
-    "title": "Sony Alpha a7 IV Full Frame Mirrorless Camera",
     "price": 2499,
-    "category": "Cameras",
     "imageId": "679e284632e701c3f5de3483",
     "imageUrl": "http://localhost:4000/image/679e284632e701c3f5de3483"
   },
   {
     "_id": "6799fbd32e4c98bd0069aabb",
-    "id": 15,
-    "img": "src/app/img/productsImg/nintendoSwitch.png",
-    "title": "Nintendo Switch OLED Model White Joy-Con",
     "price": 349,
-    "category": "Gaming",
     "imageId": "679e2a6b32e701c3f5de349a",
     "imageUrl": "http://localhost:4000/image/679e2a6b32e701c3f5de349a"
   },
   {
     "_id": "6799fbd32e4c98bd0069aabe",
-    "id": 18,
-    "img": "src/app/img/productsImg/fitbitTracker.png",
-    "title": "Fitbit Charge 6 Fitness Tracker with Heart Rate Monitoring",
     "price": 129,
-    "category": "Watches",
     "imageId": "679e28fe32e701c3f5de3487",
     "imageUrl": "http://localhost:4000/image/679e28fe32e701c3f5de3487"
   },
   {
     "_id": "6799fbd32e4c98bd0069aaaf",
-    "id": 3,
-    "img": "src/app/img/productsImg/appleWatch.png",
-    "title": "Apple Watch Series 9 GPS 41mm Starlight Aluminium ",
     "price": 399,
-    "category": "Watches",
     "imageId": "679e25d732e701c3f5de345c",
     "imageUrl": "http://localhost:4000/image/679e25d732e701c3f5de345c"
   },
   {
     "_id": "6799fbd32e4c98bd0069aab3",
-    "id": 7,
-    "img": "src/app/img/productsImg/zFold5.png",
-    "title": "Galaxy Z Fold5 Unlocked | 256GB | Phantom Black",
     "price": 1799,
-    "category": "Phones",
     "imageId": "679e256332e701c3f5de3458",
     "imageUrl": "http://localhost:4000/image/679e256332e701c3f5de3458"
   },
   {
     "_id": "6799fbd32e4c98bd0069aab4",
-    "id": 8,
-    "img": "src/app/img/productsImg/galaxyBuds.png",
-    "title": "Galaxy Buds FE Graphite",
     "price": 99,
-    "category": "Headphones",
     "imageId": "679e26ed32e701c3f5de3476",
     "imageUrl": "http://localhost:4000/image/679e26ed32e701c3f5de3476"
   },
   {
     "_id": "6799fbd32e4c98bd0069aab5",
-    "id": 9,
-    "img": "src/app/img/productsImg/ipad.png",
-    "title": "Apple iPad 9 10.2\" 64GB Wi-Fi Silver (MK2L3) 2021",
     "price": 398,
-    "category": "Phones",
     "imageId": "679e262632e701c3f5de3472",
     "imageUrl": "http://localhost:4000/image/679e262632e701c3f5de3472"
   },
   {
     "_id": "6799fbd32e4c98bd0069aab6",
-    "id": 10,
-    "img": "src/app/img/productsImg/macbookAir.png",
-    "title": "Apple MacBook Air M2 13.6\" 256GB Midnight",
     "price": 1199,
-    "category": "Computers",
     "imageId": "679e29c732e701c3f5de348f",
     "imageUrl": "http://localhost:4000/image/679e29c732e701c3f5de348f"
   },
   {
     "_id": "6799fbd32e4c98bd0069aab7",
-    "id": 11,
-    "img": "src/app/img/productsImg/xboxSeriesX.png",
-    "title": "Xbox Series X 1TB Console Black",
     "price": 499,
-    "category": "Gaming",
     "imageId": "679e2a3c32e701c3f5de3491",
     "imageUrl": "http://localhost:4000/image/679e2a3c32e701c3f5de3491"
   },
   {
     "_id": "6799fbd32e4c98bd0069aabc",
-    "id": 16,
-    "img": "src/app/img/productsImg/sonyHeadphones.png",
-    "title": "Sony WH-1000XM5 Wireless Noise-Canceling Headphones",
     "price": 399,
-    "category": "Headphones",
     "imageId": "679e26ac32e701c3f5de3474",
     "imageUrl": "http://localhost:4000/image/679e26ac32e701c3f5de3474"
   },
   {
     "_id": "6799fbd32e4c98bd0069aac1",
-    "id": 21,
-    "img": "src/app/img/productsImg/boseQuietComfort.png",
-    "title": "Bose QuietComfort 45 Wireless Headphones",
     "price": 329,
-    "category": "Headphones",
     "imageId": "679e25fe32e701c3f5de346c",
     "imageUrl": "http://localhost:4000/image/679e25fe32e701c3f5de346c"
   }

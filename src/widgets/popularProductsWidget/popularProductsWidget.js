@@ -32,7 +32,7 @@ const PopularProductsWidget = ({ productsData, }) => {
                 React.createElement("p", null, category))))),
             React.createElement("div", { className: styles.products }, categorizedProducts
                 .find(cat => cat.category === activeCategory)
-                ?.items.map(product => (React.createElement(ProductCardWidget, { ...product, key: product.id, fillColors: fillColors[product.id] || {
+                ?.items.map((product, index) => (React.createElement(ProductCardWidget, { ...product, key: product.id ?? index, fillColors: fillColors[product.id] || {
                     fill: '#f6f6f6',
                     stroke: '#A8A8A8',
                 }, onHeartClick: () => changeColor(product.id) })))))));

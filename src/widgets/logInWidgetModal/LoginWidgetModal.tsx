@@ -214,6 +214,14 @@ const LoginWidgetModal: React.FC<Props> = ({ isModalOpen, setIsModalOpen }) => {
 											</button>
 
 											<button
+												type='submit'
+												className={styles.submitButton}
+												onClick={handleLogin}
+											>
+												Войти
+											</button>
+
+											<button
 												className={styles.googleButton}
 												onClick={handleGoogleLogin}
 											>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from './style.module.scss';
 import '../../app/index.css';
 import ProductCardWidget from '../../widgets/productCardWidget/productCardWidget';
+import AdminPanelWidget from '../../widgets/adminPanelWidget/adminPanelWidget';
 const CatalogPage = ({ productsData }) => {
     const categories = [
         'Phones',
@@ -83,6 +84,7 @@ const CatalogPage = ({ productsData }) => {
                         React.createElement("span", null, visiblePages.map(page => (React.createElement("button", { key: page, onClick: () => setCurrentPage(page), className: page === currentPage ? styles.activePage : styles.page }, page)))),
                         React.createElement("button", { className: styles.paginationButton, onClick: goToNextPage, disabled: currentPage === totalPages },
                             React.createElement("svg", { width: '8', height: '14', viewBox: '0 0 8 14', fill: 'none', xmlns: 'http://www.w3.org/2000/svg' },
-                                React.createElement("path", { d: 'M1 1L7 7L1 13', stroke: 'black' })))))))));
+                                React.createElement("path", { d: 'M1 1L7 7L1 13', stroke: 'black' })))),
+                    React.createElement(AdminPanelWidget, null))))));
 };
 export default CatalogPage;

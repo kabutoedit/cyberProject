@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-
 import styles from './style.module.scss'
 import '../../app/index.css'
 import ProductCardWidget from '../../widgets/productCardWidget/productCardWidget'
+import AdminPanelWidget from '../../widgets/adminPanelWidget/adminPanelWidget'
 
 interface Product {
 	id: number
+	_id: string
 	imageUrl: string
 	title: string
 	price: number
@@ -187,6 +188,7 @@ const CatalogPage: React.FC<CatalogPageProps> = ({ productsData }) => {
 								</svg>
 							</button>
 						</div>
+						<AdminPanelWidget />
 					</div>
 				</div>
 			</div>

@@ -1,7 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inder&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+.submitButton {
+	width: 100px;
+	padding: 10px;
+	background-color: #007bff;
+	color: #fff;
+	font-size: 12px;
+	font-family: 'Inter', sans-serif;
+	font-weight: bold;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+
+	&:hover {
+		background-color: #0056b3;
+	}
+}
+
 .form {
-	font-family: 'Inter';
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
@@ -33,6 +50,7 @@
 	}
 
 	.submitButton {
+		width: 100%;
 		padding: 10px 20px;
 		background-color: #007bff;
 		color: #fff;
@@ -47,20 +65,8 @@
 			background-color: #0056b3;
 		}
 	}
-
-	.googleButton {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 20px;
-
-		font-family: 'Inter', sans-serif;
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 24px;
-		text-align: center;
-	}
 }
+
 .modalWidget {
 	position: relative;
 	top: 0;
@@ -111,22 +117,6 @@
 
 				&.success {
 					color: #2ecc71;
-				}
-			}
-
-			.closeButton {
-				padding: 10px 20px;
-				background-color: #007bff;
-				color: #fff;
-				font-size: 14px;
-				font-weight: bold;
-				border: none;
-				border-radius: 10px;
-				cursor: pointer;
-				transition: background-color 0.2s ease-in-out;
-
-				&:hover {
-					background-color: #0056b3;
 				}
 			}
 

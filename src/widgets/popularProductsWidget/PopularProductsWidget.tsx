@@ -2,9 +2,11 @@ import React, { useState } from 'react'
 import styles from './style.module.scss'
 import '../../app/index.css'
 import ProductCardWidget from '../productCardWidget/productCardWidget'
+import AdminPanelWidget from '../adminPanelWidget/adminPanelWidget'
 
 interface Product {
 	id: number
+	_id: string
 	imageUrl: string
 	title: string
 	price: number
@@ -79,6 +81,7 @@ const PopularProductsWidget: React.FC<PopularProductsWidgetProps> = ({
 								onHeartClick={() => changeColor(product.id)}
 							/>
 						))}
+					<AdminPanelWidget />
 				</div>
 			</div>
 		</section>

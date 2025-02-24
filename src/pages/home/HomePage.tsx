@@ -5,9 +5,11 @@ import BannersWidget from '../../widgets/bannersWidget/BannersWidget'
 import DiscountProductsWidget from '../../widgets/discountProductsWidget/DiscountProductsWidget'
 import BigBannerWidget from '../../widgets/bigBannerWidget/bigBannerWidget'
 import PopularProductsWidget from '../../widgets/popularProductsWidget/PopularProductsWidget'
+import AdminPaneWidget from '../../widgets/adminPanelWidget/adminPanelWidget'
 
 interface Product {
 	id: number
+	_id: string
 	imageUrl: string
 	title: string
 	price: number

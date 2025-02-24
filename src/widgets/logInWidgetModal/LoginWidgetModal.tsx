@@ -5,6 +5,8 @@ import {
 } from 'firebase/auth'
 import { auth, LogIn, LogOut } from '../../app/dataBase/firebaseConfig'
 import styles from './style.module.scss'
+import { setAdminStatus } from '../../app/store/userSlice'
+import { useDispatch } from 'react-redux'
 
 interface Props {
 	isModalOpen: boolean
@@ -17,14 +19,25 @@ const LoginWidgetModal: React.FC<Props> = ({ isModalOpen, setIsModalOpen }) => {
 	const [error, setError] = useState('')
 	const [success, setSuccess] = useState('')
 	const [user, setUser] = useState<any>(null) // Состояние для пользователя
+	const dispatch = useDispatch()
+
+	const admin = firebaseUser => {
+		if (firebaseUser?.email === 'kolya2007niger@gmail.com') {
+			dispatch(setAdminStatus(true))
+		} else {
+			dispatch(setAdminStatus(false))
+		}
+	}
 
 	// Отслеживаем состояние пользователя
 	useEffect(() => {
 		const unsubscribe = auth.onAuthStateChanged(firebaseUser => {
 			if (firebaseUser) {
 				setUser(firebaseUser)
+				admin(firebaseUser)
 			} else {
 				setUser(null)
+				admin(false)
 			}
 		})
 
@@ -128,15 +141,15 @@ const LoginWidgetModal: React.FC<Props> = ({ isModalOpen, setIsModalOpen }) => {
 					<div className={styles.modalContent}>
 						{user ? (
 							<>
-								<h3>Привет, {user.displayName || user.email}!</h3>
+								<h3>Hello, {user.displayName || user.email}!</h3>
 								<button onClick={closeModal} className={styles.closeButton}>
-									Закрыть
+									Close
 								</button>
 								<button
 									onClick={LogOut}
 									className={`${styles.closeButton} ${styles.logoutButton}`}
 								>
-									Выйти
+									Log out
 								</button>
 							</>
 						) : (
@@ -146,12 +159,12 @@ const LoginWidgetModal: React.FC<Props> = ({ isModalOpen, setIsModalOpen }) => {
 										<h3>{error ? 'Ошибка' : 'Успех'}</h3>
 										<p>{error || success}</p>
 										<button onClick={closeModal} className={styles.closeButton}>
-											Закрыть
+											Close
 										</button>
 									</>
 								) : (
 									<>
-										<h2>Регистрация</h2>
+										<h2>Log in</h2>
 										<button
 											onClick={closeModal}
 											className={styles.closeButtonX}
@@ -191,7 +204,7 @@ const LoginWidgetModal: React.FC<Props> = ({ isModalOpen, setIsModalOpen }) => {
 												/>
 											</div>
 											<div className={styles.inputGroup}>
-												<label>Пароль:</label>
+												<label>Password:</label>
 												<input
 													type='password'
 													value={password}
@@ -202,7 +215,7 @@ const LoginWidgetModal: React.FC<Props> = ({ isModalOpen, setIsModalOpen }) => {
 												/>
 											</div>
 											<button type='submit' className={styles.submitButton}>
-												Зарегистрироваться
+												Register
 											</button>
 
 											<button
@@ -210,15 +223,7 @@ const LoginWidgetModal: React.FC<Props> = ({ isModalOpen, setIsModalOpen }) => {
 												className={styles.submitButton}
 												onClick={handleLogin}
 											>
-												Войти
-											</button>
-
-											<button
-												type='submit'
-												className={styles.submitButton}
-												onClick={handleLogin}
-											>
-												Войти
+												Log in
 											</button>
 
 											<button

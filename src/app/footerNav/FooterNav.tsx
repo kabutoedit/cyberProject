@@ -44,62 +44,32 @@ export default function FooterNav() {
 				<p className={styles.footerTxt}>Assistance to the buyer</p>
 				<ul className={styles.navList}>
 					<li>
-						<NavLink
-							className={({ isActive }) =>
-								isActive ? `${styles.link} ${styles.active}` : styles.link
-							}
-							to='/findAnOrder'
-						>
+						<NavLink className={styles.link} to='/findAnOrder'>
 							Find an order
 						</NavLink>
 					</li>
 					<li>
-						<NavLink
-							className={({ isActive }) =>
-								isActive ? `${styles.link} ${styles.active}` : styles.link
-							}
-							to='/termsOfDelivery'
-						>
+						<NavLink className={styles.link} to='/termsOfDelivery'>
 							Terms of delivery
 						</NavLink>
 					</li>
 					<li>
-						<NavLink
-							className={({ isActive }) =>
-								isActive ? `${styles.link} ${styles.active}` : styles.link
-							}
-							to='/exchangeAndReturnOfGoods'
-						>
+						<NavLink className={styles.link} to='/exchangeAndReturnOfGoods'>
 							Exchange and return of goods
 						</NavLink>
 					</li>
 					<li>
-						<NavLink
-							className={({ isActive }) =>
-								isActive ? `${styles.link} ${styles.active}` : styles.link
-							}
-							to='/guarantee'
-						>
+						<NavLink className={styles.link} to='/guarantee'>
 							Guarantee
 						</NavLink>
 					</li>
 					<li>
-						<NavLink
-							className={({ isActive }) =>
-								isActive ? `${styles.link} ${styles.active}` : styles.link
-							}
-							to='/frequentlyAskedQuestions'
-						>
+						<NavLink className={styles.link} to='/frequentlyAskedQuestions'>
 							Frequently asked questions
 						</NavLink>
 					</li>
 					<li>
-						<NavLink
-							className={({ isActive }) =>
-								isActive ? `${styles.link} ${styles.active}` : styles.link
-							}
-							to='/termsOfUseOfTheSite'
-						>
+						<NavLink className={styles.link} to='/termsOfUseOfTheSite'>
 							Terms of use of the site
 						</NavLink>
 					</li>

@@ -3,7 +3,6 @@ import { Route, Routes } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Home from '../pages/home/HomePage';
-import Cart from '../pages/cart/CartPage';
 import HeaderWidget from '../widgets/headerWidget/HeaderWidget';
 import About from '../pages/about/About';
 import ContactUs from '../pages/contactUs/ContactUs';
@@ -11,6 +10,7 @@ import Blog from '../pages/blog/Blog';
 import FooterWidget from '../widgets/footerWidget/FooterWidget';
 import CatalogPage from '../pages/catalogPage/CatalogPage';
 import NotFoundPage from '../pages/NotFoundPage/NotFoundPage';
+import Cart from '../pages/cart/CartPage';
 function App() {
     const [productsData, setProductsData] = useState([]);
     useEffect(() => {

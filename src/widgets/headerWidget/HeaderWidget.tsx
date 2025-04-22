@@ -5,9 +5,11 @@ import '../../app/index.css'
 import { NavLink } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../app/store/store.js'
-import LoginWidgetModal from '../logInWidgetModal/LoginWidgetModal'
+import LoginWidgetModal from '../logInWidgetModal/LoginWidgetModal.js'
+
 export default function Header() {
 	const [isModalOpen, setIsModalOpen] = useState(false)
+
 	const totalQuantity = useSelector(
 		(state: RootState) => state.cart.totalQuantity
 	)

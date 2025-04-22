@@ -22,15 +22,15 @@ export default function FooterNav() {
             React.createElement("p", { className: styles.footerTxt }, "Assistance to the buyer"),
             React.createElement("ul", { className: styles.navList },
                 React.createElement("li", null,
-                    React.createElement(NavLink, { className: ({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link, to: '/findAnOrder' }, "Find an order")),
+                    React.createElement(NavLink, { className: styles.link, to: '/findAnOrder' }, "Find an order")),
                 React.createElement("li", null,
-                    React.createElement(NavLink, { className: ({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link, to: '/termsOfDelivery' }, "Terms of delivery")),
+                    React.createElement(NavLink, { className: styles.link, to: '/termsOfDelivery' }, "Terms of delivery")),
                 React.createElement("li", null,
-                    React.createElement(NavLink, { className: ({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link, to: '/exchangeAndReturnOfGoods' }, "Exchange and return of goods")),
+                    React.createElement(NavLink, { className: styles.link, to: '/exchangeAndReturnOfGoods' }, "Exchange and return of goods")),
                 React.createElement("li", null,
-                    React.createElement(NavLink, { className: ({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link, to: '/guarantee' }, "Guarantee")),
+                    React.createElement(NavLink, { className: styles.link, to: '/guarantee' }, "Guarantee")),
                 React.createElement("li", null,
-                    React.createElement(NavLink, { className: ({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link, to: '/frequentlyAskedQuestions' }, "Frequently asked questions")),
+                    React.createElement(NavLink, { className: styles.link, to: '/frequentlyAskedQuestions' }, "Frequently asked questions")),
                 React.createElement("li", null,
-                    React.createElement(NavLink, { className: ({ isActive }) => isActive ? `${styles.link} ${styles.active}` : styles.link, to: '/termsOfUseOfTheSite' }, "Terms of use of the site"))))));
+                    React.createElement(NavLink, { className: styles.link, to: '/termsOfUseOfTheSite' }, "Terms of use of the site"))))));
 }

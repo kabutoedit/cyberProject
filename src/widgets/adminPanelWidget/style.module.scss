@@ -1,21 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inder&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .submitButton {
-	width: 100px;
-	padding: 10px;
-	background-color: #007bff;
-	color: #fff;
-	font-size: 12px;
-	font-family: 'Inter', sans-serif;
-	font-weight: bold;
-	border: none;
-	border-radius: 10px;
-	cursor: pointer;
-	transition: background-color 0.2s ease-in-out;
+	width: 191px;
+	height: 56px;
+	background-color: inherit;
+	border: 1px solid #fff;
+	border-radius: 6px;
 
-	&:hover {
-		background-color: #0056b3;
-	}
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	text-transform: capitalize;
+	color: #fff;
+	background-color: #000;
 }
 
 .form {
@@ -51,19 +50,19 @@
 
 	.submitButton {
 		width: 100%;
-		padding: 10px 20px;
-		background-color: #007bff;
-		color: #fff;
-		font-size: 16px;
-		font-weight: bold;
-		border: none;
-		border-radius: 10px;
-		cursor: pointer;
-		transition: background-color 0.2s ease-in-out;
+		height: 56px;
+		background-color: inherit;
+		border: 1px solid #fff;
+		border-radius: 6px;
 
-		&:hover {
-			background-color: #0056b3;
-		}
+		font-family: 'Inter', sans-serif;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		text-align: center;
+		text-transform: capitalize;
+		color: #fff;
+		background-color: #000;
 	}
 }
 

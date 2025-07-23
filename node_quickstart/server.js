@@ -69,7 +69,8 @@ app.get('/products', async (req, res) => {
 		const updatedProducts = products.map(product => ({
 			...product,
 			imageUrl: product.imageId
-				? `http://localhost:4000/image/${product.imageId}`
+				? // ? `http://localhost:4000/image/${product.imageId}`
+				  `https://cyberproject-fw4e.onrender.com/image/${product.imageId}`
 				: null,
 		}))
 

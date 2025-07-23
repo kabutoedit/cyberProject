@@ -28,7 +28,7 @@ const AdminPanel = () => {
 
 		try {
 			const response = await axios.post(
-				'http://localhost:4000/add-product',
+				'https://cyberproject-fw4e.onrender.com/add-product',
 				formData
 			)
 

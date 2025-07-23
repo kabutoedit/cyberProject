@@ -16,7 +16,8 @@ function App() {
     useEffect(() => {
         const getProductsFromServer = async () => {
             try {
-                const response = await axios.get('http://localhost:4000/products');
+                // const response = await axios.get('http://localhost:4000/products')
+                const response = await axios.get('https://cyberproject-fw4e.onrender.com/products');
                 console.log('Ответ от сервера:', response);
                 if (response.data && response.data.length > 0) {
                     setProductsData(response.data);

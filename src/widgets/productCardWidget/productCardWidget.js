@@ -12,7 +12,7 @@ const ProductCard = ({ id, _id, imageUrl, title, price, fillColors, onHeartClick
     };
     const deleteProduct = async (productId) => {
         try {
-            const response = await axios.delete(`http://localhost:4000/delete-product/${productId}`);
+            const response = await axios.delete(`https://cyberproject-fw4e.onrender.com/delete-product/${productId}`);
             console.log(response.data.message); // Сообщение об успешном удалении
         }
         catch (error) {

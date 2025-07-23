@@ -21,7 +21,7 @@ const AdminPanel = () => {
             formData.append('image', imageFile);
         }
         try {
-            const response = await axios.post('http://localhost:4000/add-product', formData);
+            const response = await axios.post('https://cyberproject-fw4e.onrender.com/add-product', formData);
             const data = response.data;
             if (data.message === 'Товар добавлен') {
                 console.log('Товар успешно добавлен!');

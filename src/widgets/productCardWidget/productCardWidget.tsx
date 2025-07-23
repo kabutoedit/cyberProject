@@ -37,7 +37,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
 	const deleteProduct = async productId => {
 		try {
 			const response = await axios.delete(
-				`http://localhost:4000/delete-product/${productId}`
+				`https://cyberproject-fw4e.onrender.com/delete-product/${productId}`
 			)
 			console.log(response.data.message) // Сообщение об успешном удалении
 		} catch (error) {

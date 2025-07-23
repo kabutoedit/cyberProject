@@ -19,27 +19,6 @@ const firebaseConfig = {
 	appId: 'YOUR_APP_ID',
 }
 
-// const db = getFirestore(app)
-
-// Функция для получения всех продуктов
-// Использовалась до переноса продуктов на Mongo
-
-// export const fetchProducts = async () => {
-// 	try {
-// 		const productsCollection = collection(db, 'products')
-// 		const snapshot = await getDocs(productsCollection)
-// 		const products = snapshot.docs.map(doc => ({
-// 			id: doc.id,
-// 			...doc.data(),
-// 		}))
-// 		// console.log('Полученные продукты:', products)
-// 		return products // Возвращает массив продуктов
-// 	} catch (error) {
-// 		console.error('Ошибка при получении продуктов:', error)
-// 		return []
-// 	}
-// }
-
 // Инициализация Firebase
 const app = initializeApp(firebaseConfig)
 const auth = getAuth(app)
